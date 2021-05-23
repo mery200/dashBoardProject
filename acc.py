@@ -10,11 +10,12 @@ import requests
 from dash.dependencies import Input, Output
 import datetime as dt
 from sklearn.svm import SVR
+import pathlib
 import datetime
 import predict
 import main
 
-
+PATH = pathlib.Path(__file__).parent
 app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}],external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.config.suppress_callback_exceptions = True
 
@@ -669,9 +670,7 @@ def update_graph(w_countries):
 def update_graph(cc):
     Names = []
     Names.append(cc)
-    with open(
-            ".\\3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv",
-            newline='') as csvfile:
+    with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         rows = [row for row in reader if row["ï»¿Country Name"] in Names]
 
@@ -744,8 +743,7 @@ def update_graph(cc):
 def update_graph(cc):
     Names = []
     Names.append(cc)
-    with open(
-            ".\\3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv",
+    with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),
             newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         rows = [row for row in reader if row["ï»¿Country Name"] in Names]
@@ -819,8 +817,7 @@ def update_graph(cc):
 def update_graph(cc):
     Names = []
     Names.append(cc)
-    with open(
-            ".\\3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv",
+    with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),
             newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         rows = [row for row in reader if row["ï»¿Country Name"] in Names]
@@ -894,8 +891,7 @@ def update_graph(cc):
 def update_graph(cc):
     Names = []
     Names.append(cc)
-    with open(
-            ".\\3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv",
+    with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),
             newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         rows = [row for row in reader if row["ï»¿Country Name"] in Names]
@@ -969,8 +965,7 @@ def update_graph(cc):
 def update_graph(cc):
     Names = []
     Names.append(cc)
-    with open(
-            ".\\3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv",
+    with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),
             newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         rows = [row for row in reader if row["ï»¿Country Name"] in Names]
@@ -1044,8 +1039,7 @@ def update_graph(cc):
 def update_graph(cc):
     Names = []
     Names.append(cc)
-    with open(
-            ".\\3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv",
+    with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),
             newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         rows = [row for row in reader if row["ï»¿Country Name"] in Names]

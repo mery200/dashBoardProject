@@ -5,7 +5,10 @@ import dash_html_components as html
 #################################################################################
 
 import pandas as pd
-new_dogs = pd.read_csv(".\\3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv")
+import pathlib
+
+PATH = pathlib.Path(__file__).parent
+new_dogs = pd.read_csv(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"))
 z=new_dogs["Country Name"].unique()
 
 
