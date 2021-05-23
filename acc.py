@@ -670,9 +670,9 @@ def update_graph(w_countries):
 def update_graph(cc):
     Names = []
     Names.append(cc)
-    with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),newline='') as csvfile:
+    with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),newline='',encoding='utf-8-sig') as csvfile:
         reader = csv.DictReader(csvfile)
-        rows = [row for row in reader if row["ï»¿Country Name"] in Names]
+        rows = [row for row in reader if row["Country Name"] in Names]
 
     v = []
     for k in rows:
@@ -744,9 +744,9 @@ def update_graph(cc):
     Names = []
     Names.append(cc)
     with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),
-            newline='') as csvfile:
+            newline='',encoding='utf-8-sig') as csvfile:
         reader = csv.DictReader(csvfile)
-        rows = [row for row in reader if row["ï»¿Country Name"] in Names]
+        rows = [row for row in reader if row["Country Name"] in Names]
 
     v = []
     for k in rows:
@@ -818,9 +818,9 @@ def update_graph(cc):
     Names = []
     Names.append(cc)
     with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),
-            newline='') as csvfile:
+            newline='',encoding='utf-8-sig') as csvfile:
         reader = csv.DictReader(csvfile)
-        rows = [row for row in reader if row["ï»¿Country Name"] in Names]
+        rows = [row for row in reader if row["Country Name"] in Names]
 
     v = []
     for k in rows:
@@ -892,9 +892,9 @@ def update_graph(cc):
     Names = []
     Names.append(cc)
     with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),
-            newline='') as csvfile:
+            newline='',encoding='utf-8-sig') as csvfile:
         reader = csv.DictReader(csvfile)
-        rows = [row for row in reader if row["ï»¿Country Name"] in Names]
+        rows = [row for row in reader if row["Country Name"] in Names]
 
     v = []
     for k in rows:
@@ -966,9 +966,9 @@ def update_graph(cc):
     Names = []
     Names.append(cc)
     with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),
-            newline='') as csvfile:
+            newline='',encoding='utf-8-sig') as csvfile:
         reader = csv.DictReader(csvfile)
-        rows = [row for row in reader if row["ï»¿Country Name"] in Names]
+        rows = [row for row in reader if row["Country Name"] in Names]
 
     v = []
     for k in rows:
@@ -1040,7 +1040,7 @@ def update_graph(cc):
     Names = []
     Names.append(cc)
     with open(PATH.joinpath("3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv"),
-            newline='') as csvfile:
+            newline='',encoding='utf-8-sig') as csvfile:
         reader = csv.DictReader(csvfile)
         rows = [row for row in reader if row["Country Name"] in Names]
 
