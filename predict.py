@@ -5,7 +5,7 @@ import dash_html_components as html
 #################################################################################
 
 import pandas as pd
-new_dogs = pd.read_csv("C:\\Users\\boukh\\OneDrive\\Bureau\\pfa\\dashBoardProject\\3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv")
+new_dogs = pd.read_csv(".\\3c7f0f4f-82f9-4ade-9c6b-fe5f1bfc2273_Data.csv")
 z=new_dogs["Country Name"].unique()
 
 
